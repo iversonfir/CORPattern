@@ -2,7 +2,6 @@ import java.util.Random;
 
 public class Hero extends Sprite{
     private int hp=30;
-    private int id=new Random().nextInt(10);
     public Hero(int coordinate) {
         super(Symbol.HERO, coordinate);
     }
@@ -23,12 +22,10 @@ public class Hero extends Sprite{
     }
 
 
-
     @Override
     public String toString() {
         return "Hero{" +
                 "hp=" + hp +
-                ", id=" + id +
                 ", symbol=" + symbol +
                 ", coordinate=" + coordinate +
                 '}';
